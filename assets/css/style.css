@@ -3362,7 +3362,7 @@ li {
     height: 100%;
     width: 100%;
     content: "";
-    background: rgba(255, 157, 0, .90);
+    background: rgba(49, 126, 214, 0.9);
     border-radius: 8px;
     -webkit-transition: all 700ms ease;
     -ms-transition: all 700ms ease;
