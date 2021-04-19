@@ -53,3 +53,29 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+# Use the following plug-ins
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-archives
+  - jekyll-paginate
+  - jemoji
+  
+# Exclude these files from your production _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+  user:
+    output: true
+    permalink: /:path/
+  admin:
+    output: true
+    permalink: /admin/:path/
