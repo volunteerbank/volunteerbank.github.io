@@ -2244,9 +2244,9 @@ li {
     bottom: 20px;
     width: 22px;
     content: "";
-    background-image: -moz-linear-gradient(90deg, rgb(255, 157, 0) 0%, rgb(255, 109, 18) 100%);
-    background-image: -webkit-linear-gradient(90deg, rgb(255, 157, 0) 0%, rgb(255, 109, 18) 100%);
-    background-image: -ms-linear-gradient(90deg, rgb(255, 157, 0) 0%, rgb(255, 109, 18) 100%);
+    background-image: -moz-linear-gradient(90deg, rgb(0, 53, 255) 0%, rgb(18, 80, 255) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(0, 53, 255) 0%, rgb(18, 80, 255) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(0, 53, 255) 0%, rgb(18, 80, 255) 100%);
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
