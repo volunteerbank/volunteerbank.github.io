@@ -27,7 +27,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/volunteerbank/volunteerbank.github.io">
     <img src="assets/images/logo1a.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -36,14 +36,14 @@
   <p align="center">
     Welcome to the pages of our platform!
     <br />
-    <a href="https://github.com/Infinity-ID/Infinity-ID/wiki"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/volunteerbank/volunteerbank.github.io/wiki"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://infinity-id.co.uk/">View Site</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/volunteerbank/volunteerbank.github.io/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/volunteerbank/volunteerbank.github.io/issues">Request Feature</a>
   </p>
 </p>
 
