@@ -1,2 +1,4 @@
-
-volunteer.html
+---
+permalink: /volunteer.html
+layout: volunteer
+---
