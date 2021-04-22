@@ -9,11 +9,11 @@ title: Register
 <table style="width:100%">
 <tr><td>
 <label for="firstname" class="sr-only h32">First name</label>
-<input type="firstname" id="firstname" class="form-control" placeholder="Full Name" required autofocus>
+<input type="firstname" id="firstname" class="form-control" placeholder="First name" required autofocus>
 </td>
 <td>
 <label for="email" class="sr-only h32">Second name</label>
-<input type="email" id="Second name" class="form-control" placeholder="Email Address" required autofocus>
+<input type="email" id="Second name" class="form-control" placeholder="Second name" required autofocus>
 </td>
 <td>
 <label for="username" class="sr-only h32">Username</label>
@@ -24,7 +24,7 @@ title: Register
 <tr>
 <td>
 <label for="email" class="sr-only">Email</label>
-<input type="nuemailmber1" id="email" class="form-control" placeholder="Email" required>
+<input type="email" id="email" class="form-control" placeholder="Email" required>
 </td>
 <td>
 <label for="password" class="sr-only">Password</label>
