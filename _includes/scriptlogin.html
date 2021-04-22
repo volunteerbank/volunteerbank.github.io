@@ -1,0 +1,81 @@
+<script>
+    function loadDoc() {
+    // pre-fill FormData from the form
+    // let formData = new FormData(document.forms.person);
+    
+    // add one more field
+    // formData.append("middle", "Lee");
+    
+    // send it out
+    var data1 = document.getElementById('name').value;
+    var data2 = "ered.com";
+    var data3 = document.getElementById('password').value;
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "https://infinityidnode.herokuapp.com/api/auth/signin");
+    xhr.setRequestHeader("cache-control", "no-cache");
+    xhr.setRequestHeader("content-type", "application/json");
+    
+    xhr.onreadystatechange = function () {
+    if (xhr.readyState == 4) {
+        if (xhr.status == 200){
+            setTimeout(function(){
+                window.location.href = 'https://infinity-id.co.uk/profile2/';
+             }, 5000);
+    //console.log(xhr.status);
+    //console.log(xhr.responseText);
+    var result = (xhr.responseText);
+    var result1 = result.split(':')[1];
+    var result2 = result1.split(',')[0];
+    var name1 = result.split(':')[2];
+    var name2 = name1.split(',')[0];
+    var at = result.split(':').pop();
+    var at2 = at.split('}')[0];
+    //console.log(result);
+    document.getElementById('result1').innerHTML = 'Welcome '+ name2 +' you will be redirected in 5secs';
+    document.cookie = "user= userid: "+ result2 +", accessToken: "+ at2 +"; path=/; expires=Tue, 19 Jan 2038 03:14:07 GMT"
+    //alert('you are getting there');
+    }
+    if (xhr.status == 404){
+       // alert('its ok');
+       document.getElementById('result1').innerHTML = 'dude your winning';
+      // $(".result").html('not working');
+    }
+    if (xhr.status == 401){
+       // alert('its ok');
+       $(".result").html('Looks like you got the wrong password<button>Reset Password</button>');
+    }
+    }
+    };
+    
+    var data1a = `{
+    "email": "` + data2 + `",
+    "password": "` + data3 + `",
+    "username":"` + data1 + `",
+    "roles": ["user"]
+    }`;
+    if (xhr.status === 404) {
+    // I can live with that, log it and go on
+    console.log("file missing");
+    }
+    
+    if (xhr.status === 200) {
+    // I can live with that, log it and go on
+    alert("you are cool");
+    }
+    xhr.send(data1a);
+    xhr.onload = () => (console.log('the world is not enough'));        
+    var data7 = xhr.responseText;
+    
+    // now you can access it's params:
+    
+    
+    if( data7.indexOf('accessToken') >= 0){
+    
+    }      
+    
+    // log response
+    //console.log(data7);
+    
+    
+    }
+    </script>
