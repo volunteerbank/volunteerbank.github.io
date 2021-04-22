@@ -1,0 +1,58 @@
+<script>
+    function loadDoc1() {
+    // pre-fill FormData from the form
+    // let formData = new FormData(document.forms.person);
+    
+    // add one more field
+    // formData.append("middle", "Lee");
+    
+    // send it out
+    var data1 = document.getElementById('name').value;
+    var data2 = document.getElementById('email').value;
+    var data3 = document.getElementById('password').value;
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "https://volunteerbanknode.herokuapp.com/api/auth/signup");
+    xhr.setRequestHeader("cache-control", "no-cache");
+    xhr.setRequestHeader("content-type", "application/json");
+    
+    xhr.onreadystatechange = function () {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+    console.log(xhr.status);
+    console.log(xhr.responseText);
+    var result = (xhr.responseText);
+    console.log(result);
+    alert('you are getting there');
+    }};
+    
+    var data1a = `{
+    "email": "` + data2 + `",
+    "password": "` + data3 + `",
+    "username":"` + data1 + `",
+    "roles": ["user"]
+    }`;
+    if (xhr.status === 404) {
+    // I can live with that, log it and go on
+    console.log("file missing");
+    }
+    
+    if (xhr.status === 200) {
+    // I can live with that, log it and go on
+    alert("you are cool");
+    }
+    xhr.send(data1a);
+    xhr.onload = () => (console.log('the world is not enough'));        
+    var data7 = xhr.responseText;
+    
+    // now you can access it's params:
+    
+    
+    if( data7.indexOf('accessToken') >= 0){
+    
+    }      
+    
+    // log response
+    //console.log(data7);
+    
+    
+    }
+    </script>

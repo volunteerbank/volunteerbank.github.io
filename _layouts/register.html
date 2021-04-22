@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    {% include indexhead.html %}
+<title>{{ page.title }}</title>
+<body>
+    <div class="page-wrapper">
+
+        {% include siteheader.html %} 
+
+    {{ page.content }}
+    {% include sitefooter1.html %}
+
+    {% include sitefooter.html %}
+</div><!-- /.page-wrapper -->
+{% include scriptregister.html %} 
+
+<a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+    {% include mobilenav.html %}
+
+    {% include searchpopup.html %}
+
+    {% include ga.html %}
+
+   {% include indexscript.html %}
+
+</body>
+</html>
