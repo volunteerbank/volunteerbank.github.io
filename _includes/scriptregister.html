@@ -10,6 +10,8 @@
     var data1 = document.getElementById('username').value;
     var data2 = document.getElementById('email').value;
     var data3 = document.getElementById('password').value;
+    var data4 = document.getElementById('firstname').value;
+    var data5 = document.getElementById('secondname').value;
     let xhr = new XMLHttpRequest();
     xhr.open("POST", "https://volunteerbanknode.herokuapp.com/api/auth/signup");
     xhr.setRequestHeader("cache-control", "no-cache");
