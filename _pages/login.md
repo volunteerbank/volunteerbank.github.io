@@ -1,1 +1,4 @@
-something
+---
+permalink: /login.html
+layout: login
+---
