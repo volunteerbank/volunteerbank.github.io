@@ -8,23 +8,23 @@ title: Register
 <h1 class="h3 mb-3 font-weight-normal h32">A Blockchain Social Platform to Monetize Your Own Data. Earn Crypto & Rewards!</h1>
 <table style="width:100%">
 <tr><td>
-<label for="name" class="sr-only h32">Full name</label>
-<input type="name" id="name" class="form-control" placeholder="Full Name" required autofocus>
+<label for="firstname" class="sr-only h32">First name</label>
+<input type="firstname" id="firstname" class="form-control" placeholder="Full Name" required autofocus>
 </td>
 <td>
-<label for="email" class="sr-only h32">Email Address</label>
-<input type="email" id="email" class="form-control" placeholder="Email Address" required autofocus>
+<label for="email" class="sr-only h32">Second name</label>
+<input type="email" id="Second name" class="form-control" placeholder="Email Address" required autofocus>
 </td>
 <td>
-<label for="name" class="sr-only h32">Username</label>
-<input type="name" id="name" class="form-control" placeholder="Username" required autofocus>
+<label for="username" class="sr-only h32">Username</label>
+<input type="username" id="username" class="form-control" placeholder="Username" required autofocus>
 </td>
 </tr>
 <!-- <input id="name" name="name" value="John">-->
 <tr>
 <td>
-<label for="number1" class="sr-only">Phone Number</label>
-<input type="number1" id="number1" class="form-control" placeholder="Phone Number" required>
+<label for="email" class="sr-only">Email</label>
+<input type="nuemailmber1" id="email" class="form-control" placeholder="Email" required>
 </td>
 <td>
 <label for="password" class="sr-only">Password</label>

@@ -7,7 +7,7 @@
     // formData.append("middle", "Lee");
     
     // send it out
-    var data1 = document.getElementById('name').value;
+    var data1 = document.getElementById('username').value;
     var data2 = document.getElementById('email').value;
     var data3 = document.getElementById('password').value;
     let xhr = new XMLHttpRequest();
@@ -26,6 +26,8 @@
     
     var data1a = `{
     "email": "` + data2 + `",
+    "firstname": "` + data4 + `",
+    "secondname": "` + data5 + `",
     "password": "` + data3 + `",
     "username":"` + data1 + `",
     "roles": ["user"]
