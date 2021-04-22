@@ -1,6 +1,7 @@
 ---
 permalink: /login.html
 layout: login
+title: Login
 ---
 <form name="person" class="form-signin">
 <img class="mb-4" src="../img/infinityid-logo-1@1x.png" alt=""  height="72">

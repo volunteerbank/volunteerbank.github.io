@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
     {% include indexhead.html %}
-<title></title>
-<body>hello world
-
-    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
-
+<title>{{ page.title }}</title>
+<body>
+    <div class="page-wrapper">
     {{ page.content }}
+</div><!-- /.page-wrapper -->
+
+<a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
     {% include mobilenav.html %}
 
     {% include searchpopup.html %}
