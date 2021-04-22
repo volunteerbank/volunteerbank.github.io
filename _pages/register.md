@@ -12,8 +12,8 @@ title: Register
 <input type="firstname" id="firstname" class="form-control" placeholder="First name" required autofocus>
 </td>
 <td>
-<label for="email" class="sr-only h32">Second name</label>
-<input type="email" id="Second name" class="form-control" placeholder="Second name" required autofocus>
+<label for="secondname" class="sr-only h32">Second name</label>
+<input type="secondname" id="secondname" class="form-control" placeholder="Second name" required autofocus>
 </td>
 <td>
 <label for="username" class="sr-only h32">Username</label>
