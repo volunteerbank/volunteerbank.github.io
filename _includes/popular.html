@@ -141,8 +141,12 @@
                 var out = "";
                 var i;
                 for(i = 0; i < arr.length; i++) {
-                    out += '<a href="' + arr[i].image_url + '">' +
-                    arr[i].title + '</a><br>';
+                    out += '<div class="popular-causes__sinlge">'+
+                        '<div class="popular-causes__img">'+
+                            '<img src="' + arr[i].image_url + '" alt="">'+
+                            '</div>'+
+                        '<a href="' + arr[i].image_url + '">' +
+                    arr[i].title + '</a></div>';
                 }
                 document.getElementById("id02").innerHTML = out;
             }
