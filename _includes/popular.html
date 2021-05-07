@@ -7,32 +7,10 @@
                 </div>
                 <div class="row">
                     <div class="col-xl-12">
-                        <div class="popular-causes__carousel owl-theme owl-carousel">
+                        <div id="id02" class="popular-causes__carousel owl-theme owl-carousel">
                                 <div id="id01"></div>
 
-<script>
-var xmlhttp = new XMLHttpRequest();
-var url = "https://volunteerbanknode.herokuapp.com/api/json/events";
 
-xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        var myArr = JSON.parse(this.responseText);
-        myFunction(myArr);
-    }
-};
-xmlhttp.open("GET", url, true);
-xmlhttp.send();
-
-function myFunction(arr) {
-    var out = "";
-    var i;
-    for(i = 0; i < arr.length; i++) {
-        out += '<a href="' + arr[i].image_url + '">' +
-        arr[i].title + '</a><br>';
-    }
-    document.getElementById("id01").innerHTML = out;
-}
-</script>
                             <!--Popular Causes Single-->
                             <div class="popular-causes__sinlge">
                                 <div class="popular-causes__img">
@@ -146,4 +124,27 @@ function myFunction(arr) {
                 </div>
             </div>
         </section>
+        <script>
+            var xmlhttp = new XMLHttpRequest();
+            var url = "https://volunteerbanknode.herokuapp.com/api/json/events";
+            
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var myArr = JSON.parse(this.responseText);
+                    myFunction(myArr);
+                }
+            };
+            xmlhttp.open("GET", url, true);
+            xmlhttp.send();
+            
+            function myFunction(arr) {
+                var out = "";
+                var i;
+                for(i = 0; i < arr.length; i++) {
+                    out += '<a href="' + arr[i].image_url + '">' +
+                    arr[i].title + '</a><br>';
+                }
+                document.getElementById("id02").innerHTML = out;
+            }
+            </script>
         <!--Popular Causes One End-->
