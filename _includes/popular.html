@@ -146,7 +146,11 @@
                             '<img src="' + arr[i].image_url + '" alt="">'+
                             '<div class="popular-causes__category">'+
                             '<p>' + arr[i].campaigncat[0] + '</p>'+
-                            '</div></div></div>';
+                            '</div></div>'+
+                            '<div class="popular-causes__content">'+
+                            '<div class="popular-causes__title"><h3>'+
+                            '<a href="' + arr[i].url[0] + '">' + arr[i].title + '</a>'+
+                            '</h3></div></div></div>';
                 }
                 document.getElementById("id01").innerHTML = out;
             }
