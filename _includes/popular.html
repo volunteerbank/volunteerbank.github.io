@@ -144,7 +144,9 @@
                     out += '<div class="popular-causes__sinlge">'+
                         '<div class="popular-causes__img">'+
                             '<img src="' + arr[i].image_url + '" alt="">'+
-                            '</div>'+
+                            '<div class="popular-causes__category">'+
+                            '<p>' + arr[i].campaigncat[0] + '</p>'+
+                            '</div></div>'+
                         '<a href="' + arr[i].image_url + '">' +
                     arr[i].title + '</a></div>';
                 }
