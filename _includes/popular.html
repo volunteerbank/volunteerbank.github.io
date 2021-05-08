@@ -60,10 +60,11 @@
                 let div = document.createElement('div');
 div.id = 'content';
 div.className = 'note';
+div.innerHTML = out;
 
 // create a new text node and add it to the div
-let text = document.createTextNode('CreateElement example');
-div.appendChild(text);
+//let text = document.createTextNode('CreateElement example');
+//div.appendChild(text);
 
 // add div to the document
 document.body.appendChild(div);
